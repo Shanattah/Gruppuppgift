@@ -25,11 +25,14 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  // Add click event listeners to all the images to open them in the modal
-  const images = document.querySelectorAll(".menu-category img");
-  images.forEach((image) => {
-    image.addEventListener("click", function () {
-      openModal(this.src);
-    });
+  // Add click event listeners to all the images inside .menu-category elements
+  const menuCategories = document.querySelectorAll(".menu-category");
+  menuCategories.forEach((category) => {
+    const image = category.querySelector("img");
+    if (image) {
+      image.addEventListener("click", function () {
+        openModal(this.src);
+      });
+    }
   });
 });
