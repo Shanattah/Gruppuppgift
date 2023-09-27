@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="script.js"></script>
+    <title>Lunchmeny</title>
+  </head>
+
+  <body>
+    <!-- nav start -->
+    <nav class="navbar navbar-expand-lg bg-dark fixed-top" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">MMHS</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          style="color: white"
+        >
+          <span><i class="fa-solid fa-bars" style="color: #ffffff"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="boka.html">BOKA BORD</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                MENY
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="lunch.html">LUNCH</a></li>
+                <li><a class="dropdown-item" href="middag.html">MIDDAG</a></li>
+                <li><a class="dropdown-item" href="dryck.html">DRYCK</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="bestalla.html">BESTÄLLA MAT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="tema.html">VECKANS TEMA</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="kontakt.html">KONTAKT</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- nav end -->
+    <div class="container-fluid lunchmenu">
+      <div class="row">
+        <!-- Display 3 items on larger screens -->
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="menu-category">
+            <h2>Everyday lunch offer</h2>
+            <h3>Mama's sushi platter</h3>
+            <img
+              src="https://www.mariefranceasia.com/wp-content/uploads/sites/7/2015/10/GettyImages-560787803.jpg"
+              alt="Signature sushi dish"
+              width="100"
+              height="100"
+            />
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="menu-category">
+            <h2>Today's fish</h2>
+            <h3>Chinese style sea bass</h3>
+            <img
+              src="https://drewandcole.com/wp-content/uploads/2020/02/CleverChef-Pro-Recipe-Banner-Images-Chinese-Style-Sea-Bass-1024x503.jpg"
+              alt="Chinese style sea bass"
+              width="100"
+              height="100"
+            />
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="menu-category">
+            <h2>Today's pork</h2>
+            <h3>Korean bulgogi</h3>
+            <img
+              src="https://i0.wp.com/thesubversivetable.com/wp-content/uploads/2019/06/img_5837.jpg"
+              alt="Korean bulgogi"
+              width="100"
+              height="100"
+            />
+          </div>
+        </div>
+        <!-- Beef Category -->
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="menu-category">
+            <h2>Today's beef</h2>
+            <h3>Filipino Bistek</h3>
+            <img
+              src="https://th.bing.com/th/id/R.cf961773abba6cfd8fa2e79621a8117a?rik=sFZgeVdG%2fTHJUg&riu=http%3a%2f%2fwww.sarahlynskitchen.com%2fwp-content%2fuploads%2f2015%2f01%2fbistek-003fixW.jpg&ehk=AdCGK2zPzEdnDtQ3aUHoqedMygWB5ZviZs%2bkvQ98bC8%3d&risl=&pid=ImgRaw&r=0"
+              alt="Filipino Bistek"
+              width="100"
+              height="100"
+            />
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <h2>Today's vegetarian</h2>
+          <h3>Vietnamese spring rolls</h3>
+          <img
+            src="https://successrice.com/wp-content/uploads/2021/06/VIETNAMESE-SPRING-ROLLS-1536x864.jpg"
+            alt="Vietnamese spring rolls"
+            width="100"
+            height="100"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="modal-container" id="imageModal">
+      <div class="modal-content">
+        <!-- Style the close button (X) -->
+        <span class="close-button" id="closeModal">&times;</span>
+        <!-- Set a max width and max height for the modal image -->
+        <img
+          src=""
+          alt="Large Image"
+          id="modalImage"
+          style="max-width: 80%; max-height: 95vh"
+        />
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/e115db5231.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
