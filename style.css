@@ -4,3 +4,8 @@ a:hover {
     border-radius: 5px;
     }
 
+#title1,#title2{
+    font-family: 'Merienda', cursive; 
+    font-size: 25px;
+}
+
