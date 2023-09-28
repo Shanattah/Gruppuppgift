@@ -9,3 +9,14 @@ a:hover {
     font-size: 25px;
 }
 
+.red-letter{
+    color: red;
+}
+
+.error { display: none; 
+}
+
+input:invalid + .error {
+  display: block;
+  color: red;
+}
