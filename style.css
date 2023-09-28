@@ -13,6 +13,10 @@ a:hover {
   background-size: cover;
   color: rgba(255, 255, 255, 0.9);
 }
+.menu-category img {
+  width: 150px;
+  height: 100px;
+}
 
 .price {
   margin-top: 100px;
@@ -66,9 +70,10 @@ a:hover {
 .close-button {
   position: absolute;
   top: 10px;
-  right: 10px;
-  font-size: 24px;
+  right: 15%;
+  font-size: 50px;
   cursor: pointer;
+  color: black;
 }
 #title1,
 #title2 {
