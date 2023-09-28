@@ -3,11 +3,38 @@ a:hover {
   opacity: 0.8;
   border-radius: 5px;
 }
+.lunch-page {
+  background-image: url(https://media.architecturaldigest.com/photos/572a34ffe50e09d42bdfb5e0/master/pass/japanese-restaurants-la-01.jpg);
+}
 
+.price {
+  margin-top: 100px;
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
 .lunchmenu {
   margin-top: 100px;
 }
-/* Add this CSS to your existing styles or style.css file */
+.menu-category {
+  margin: 20px;
+  background-color: #0a9caf;
+  border-radius: 10px;
+  padding: 20px;
+}
+.menu-category h2 {
+  font-size: 24px;
+  color: #333;
+}
+
+.menu-category h3 {
+  font-size: 18px;
+  color: #434242;
+}
+.menu-category:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
 .modal-container {
   display: none;
   position: fixed;
