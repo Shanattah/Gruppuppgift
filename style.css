@@ -13,10 +13,3 @@ a:hover {
     color: red;
 }
 
-.error { display: none; 
-}
-
-input:invalid + .error {
-  display: block;
-  color: red;
-}
