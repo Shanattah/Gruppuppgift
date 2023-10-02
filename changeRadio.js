@@ -1,11 +1,11 @@
-var takeAwayRadio = document.getElementById('radio1');
+var takeOutRadio = document.getElementById('radio1');
       var deliveryRadio = document.getElementById('radio2');
-      var takeAwayDropdown = document.getElementById('pickupTimeContainer');
+      var takeOutDropdown = document.getElementById('pickupTimeContainer');
       var leveransAdress = document.getElementById('adressInputContainer');
  
-      takeAwayRadio.addEventListener('change', function(){
-       if(takeAwayRadio.checked){
-         takeAwayDropdown.style.display='block';
+      takeOutRadio.addEventListener('change', function(){
+       if(takeOutRadio.checked){
+         takeOutDropdown.style.display='block';
          leveransAdress.style.display='none';
        }
       });
@@ -13,6 +13,6 @@ var takeAwayRadio = document.getElementById('radio1');
       deliveryRadio.addEventListener('change', function(){
        if(deliveryRadio.checked){
          leveransAdress.style.display='block';
-         takeAwayDropdown.style.display='none';
+         takeOutDropdown.style.display='none';
        }
       });
