@@ -81,7 +81,7 @@ a:hover {
   font-size: 25px;
 }
 .drickmeny{
-max-width 800px:
+/*max-width: 800px;*/
   margin: 0 auto;
    padding: 20px;
     background-color: #fff;
@@ -90,7 +90,7 @@ max-width 800px:
 }
 
   .drickor {
-    background-color:
+    /*background-color:*/
     padding: 15px;
     border-radius: 5px;
     margin-bottom: 20px;
