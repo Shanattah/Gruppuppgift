@@ -148,11 +148,19 @@ h4 {
         height: 500px;
     }
 
+    #takeout_photo, #delivery_photo{
+        height: 180px;
+    }
+
 }
 
 @media only screen and (min-width: 1200px){
 
     #takeout_card, #delivery_card{
         height: 550px;
+    }
+
+    #takeout_photo, #delivery_photo{
+        height: 250px;
     }
 }
