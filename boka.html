@@ -68,7 +68,7 @@
 
                 <label for="customerNameInput" class="form-label">Namn:<span class="red-letter">*</span></label>
            
-                <input type="text" class="form-control" id="customerNameInput" placeholder="Ditt förstanamn Ditt efternamn" aria-label="customer name" aria-describedby="InputGroup1" required />
+                <input type="text" class="form-control" id="customerNameInput" placeholder="Ditt förstanamn Ditt efternamn" aria-label="customer name" required />
                 
                 <div class="invalid-feedback">
                     Ogiltigt namn
@@ -181,7 +181,7 @@
                 </div>
             </div>
 
-            <div class="mb-3 col-12" id="pickupTimeContainerLunch" >
+            <div class="mb-3 col-12" >
                 <label for="pickupNumberOfGuests" class="form-label">Antal personer(Om du vill boka mer än 9 personer skriv meddelande):<span class="red-letter">*</span></label>
                 <select class="form-select" id="pickupNumberOfGuests" aria-label="guests select" required>
                     <option value="" selected disabled hidden>Välj antal personer</option>
@@ -199,18 +199,6 @@
                   Välj ett alternativ
                 </div>
             </div>
-
-            <!--Show when user choose Hemleverans -->
-            <div class="mb-3 col-12" id="adressInputContainer" style="display: none;">
-              <label for="addressInput" class="form-label">Leveransadress:<span class="red-letter">*</span></label>
-
-              <input type="text" class="form-control" id="adressInput" minlength="10" placeholder="abcvägen 1  11160 Strockholm"  />
-              
-              <div class="invalid-feedback">
-                  Ogiltigt address
-              </div>
-          </div>
-
 
             <div class="mb-3 col-12">
                 <label for="DescriptionInput" class="form-label">Meddelande(Skriv exaxt datum som du vill boka och allergi):<span class="red-letter">*</span></label>
