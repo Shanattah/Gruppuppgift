@@ -55,7 +55,7 @@
     <!-- nav end -->
     <main>
         <div class="container-fluid p-sm-5 bg-black text-bg-secondary">
-        <div class="text-center m-3"><h4>Boka boad</h4></div>
+        <div class="text-center m-3"><h3>Boka bord</h3></div>
 
       <div class="container ">
         <form class="row needs-validation m-2" novalidate>
@@ -180,7 +180,7 @@
 
             <div class="mb-3 col-12" id="pickupTimeContainerLunch" >
                 <label for="pickupNumberOfGuests" class="form-label">Antal personer(Om du vill boka mer än 9 personer skriv meddelande):<span class="red-letter">*</span></label>
-                <select class="form-select" id="pickupNumberOfGuests" aria-label="guests select" >
+                <select class="form-select" id="pickupNumberOfGuests" aria-label="guests select" required>
                     <option value="" selected disabled hidden>Välj antal personer</option>
                     <option value="1">2</option>
                     <option value="2">3</option>
@@ -215,14 +215,14 @@
                 <textarea class="form-control" id="DescriptionInput" rows="3" required></textarea>
                 
                 <div class="invalid-feedback">
-                    Skriv din beställning
+                    Skriv din meddelande
                 </div>
             </div>
 
 
             
             <div class="col-12">
-                <button class="btn btn-outline-secondary" type="submit"  >Skicka</button>
+                <button class="btn btn-light" type="submit"  >Skicka</button>
             </div>
         </form>
     </div>
