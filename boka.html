@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+       
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e115db5231.js" crossorigin="anonymous"></script>
+
+  </head>
+  
+  <body class="bg-black">
+
+    <!-- nav start -->
+    <nav class="navbar navbar-expand-lg bg-dark sticky-top"  data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img src="images/MMHSlogo_sushi.png" alt="logo" style="width: 130px;"></a>
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" style="color: white;">
+          <span><i class="fa-solid fa-bars" style="color: #ffffff;"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="boka.html">BOKA BORD</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                MENY
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="lunch.html">LUNCH</a></li>
+                <li><a class="dropdown-item" href="middag.html">MIDDAG</a></li>
+                <li><a class="dropdown-item" href="dryck.html">DRYCK</a></li>
+                <li><a class="dropdown-item" href="">EFTERRÄTTER</a></li>
+                <li><a class="dropdown-item" href="">SIDORÄTTER</a></li>
+              </ul>
+            </li>  
+            <li class="nav-item">
+              <a class="nav-link" href="bestalla.html">BESTÄLLA MAT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="tema.html">VECKANS TEMA</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="kontakt.html">KONTAKT</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- nav end -->
+    <main>
+        <div class="container-fluid p-sm-5 bg-black text-bg-secondary">
+        <div class="text-center m-3"><h3>Boka bord</h3></div>
+
+      <div class="container ">
+        <form class="row needs-validation m-2" novalidate>
+
+
+            <div class="mb-3 col-12">
+
+                <label for="customerNameInput" class="form-label">Namn:<span class="red-letter">*</span></label>
+           
+                <input type="text" class="form-control" id="customerNameInput" placeholder="Ditt förstanamn Ditt efternamn" aria-label="customer name" aria-describedby="InputGroup1" required />
+                
+                <div class="invalid-feedback">
+                    Ogiltigt namn
+                </div>
+            </div>
+
+            <div class="mb-3 col-12">
+                <label for="telefonnummerInput" class="form-label">Telefonnummer:<span class="red-letter">*</span></label>
+
+                <input type="tel" class="form-control" id="telefonnummerInput" minlength="10" placeholder="0102345555" pattern="[0-9]{1,10}"
+                required />
+                
+                <div class="invalid-feedback">
+                    Ogiltigt telefonnummer
+                </div>
+            </div>
+
+            <div class="mb-3 col-12">
+                <label for="emailInput" class="form-label">E-postadress:<span class="red-letter">*</span></label>
+
+                <input type="email" class="form-control" id="emailInput" placeholder="namn@example.com" required />
+                
+                <div class="invalid-feedback">
+                    Ogiltigt E-postadress
+                </div>
+            </div>
+
+            <div class="mb-3 col-12" id="pickupTimeContainer" >
+                <label for="pickupTime" class="form-label">Bokning dag(Ni får boka en dag från den här veckans eller nästa veckans dagar):<span class="red-letter">*</span></label>
+                <select class="form-select" id="pickupTime" aria-label="dag select" required>
+                    <option value="" selected disabled hidden>Välj dag</option>
+                    <option value="1">Denna vecka Måndag</option>
+                    <option value="2">Denna vecka Tisdag</option>
+                    <option value="3">Denna vecka Onsdag</option>
+                    <option value="4">Denna vecka Torsdag</option>
+                    <option value="5">Denna vecka Fredag</option>
+                    <option value="6">Denna vecka Lördag</option>
+                    <option value="7">Denna vecka Söndag</option>
+                    <option value="8">Nästa vecka Måndag</option>
+                    <option value="9">Nästa vecka Tisdag</option>
+                    <option value="10">Nästa vecka Onsdag</option>
+                    <option value="11">Nästa vecka Torsdag</option>
+                    <option value="12">Nästa vecka Fredag</option>
+                    <option value="13">Nästa vecka Lördag</option>
+                    <option value="14">Nästa vecka Söndag</option>
+                </select>
+                <div class="invalid-feedback">
+                  Välj ett alternativ
+                </div>
+            </div>
+
+            <div class="mb-3 col-12">
+                <div class="form-label">Välj tid:<span class="red-letter">*</span></div>
+                  <div class="form-check-inline">
+                      <input class="form-check-input" type="radio" name="radioB" id="radio1" value="lunch" required/>
+  
+                      <label class="form-check-label" for="radio1">
+                          Lunch
+                      </label>
+                  </div>
+  
+                  <div class="form-check-inline">
+                      <input class="form-check-input" type="radio" name="radioB" id="radio2" value="dinner" />
+  
+                      <label class="form-check-label" for="radio2">
+                          Middag
+                      </label>
+                  </div>
+                  <div class="invalid-feedback">
+                    Välj en upphämtningstid
+                </div>
+              </div>
+
+            <div class="mb-3 col-12" id="pickupTimeContainerLunch" style="display: none;" >
+                <label for="pickupLunchTime" class="form-label">Lunch bokning (Vadagar 10:30-14:00):<span class="red-letter">*</span></label>
+                <select class="form-select" id="pickupLunchTime" aria-label="time select" >
+                    <option value="" selected disabled hidden>Välj tid</option>
+                    <option value="1">10:30</option>
+                    <option value="2">11:00</option>
+                    <option value="3">11:30</option>
+                    <option value="4">13:30</option>
+                    <option value="5">14:00</option>
+                </select>
+                <div class="invalid-feedback">
+                  Välj ett alternativ
+                </div>
+            </div>
+
+            <div class="mb-3 col-12" id="pickupTimeContainerDinner" style="display: none;">
+                <label for="pickupDinnerTime" class="form-label">Middag bokning:<span class="red-letter">*</span></label>
+                <select class="form-select" id="pickupDinnerTime" aria-label="time select" >
+                    <option value="" selected disabled hidden>Välj tid</option>
+                    <option value="1">15:00</option>
+                    <option value="2">15:30</option>
+                    <option value="3">16:00</option>
+                    <option value="4">16:30</option>
+                    <option value="5">17:00</option>
+                    <option value="6">17:30</option>
+                    <option value="7">18:00</option>
+                    <option value="8">18:30</option>
+                    <option value="9">19:00</option>
+                    <option value="10">19:30</option>
+                    <option value="11">20:00</option>
+                    <option value="12">20:30</option>
+                    <option value="13">21:00</option>
+                    <option value="14">21:30</option>
+                </select>
+                <div class="invalid-feedback">
+                  Välj ett alternativ
+                </div>
+            </div>
+
+            <div class="mb-3 col-12" id="pickupTimeContainerLunch" >
+                <label for="pickupNumberOfGuests" class="form-label">Antal personer(Om du vill boka mer än 9 personer skriv meddelande):<span class="red-letter">*</span></label>
+                <select class="form-select" id="pickupNumberOfGuests" aria-label="guests select" required>
+                    <option value="" selected disabled hidden>Välj antal personer</option>
+                    <option value="1">2</option>
+                    <option value="2">3</option>
+                    <option value="3">4</option>
+                    <option value="4">5</option>
+                    <option value="5">6</option>
+                    <option value="6">7</option>
+                    <option value="7">8</option>
+                    <option value="8">Mer än 9</option>
+
+                </select>
+                <div class="invalid-feedback">
+                  Välj ett alternativ
+                </div>
+            </div>
+
+            <!--Show when user choose Hemleverans -->
+            <div class="mb-3 col-12" id="adressInputContainer" style="display: none;">
+              <label for="addressInput" class="form-label">Leveransadress:<span class="red-letter">*</span></label>
+
+              <input type="text" class="form-control" id="adressInput" minlength="10" placeholder="abcvägen 1  11160 Strockholm"  />
+              
+              <div class="invalid-feedback">
+                  Ogiltigt address
+              </div>
+          </div>
+
+
+            <div class="mb-3 col-12">
+                <label for="DescriptionInput" class="form-label">Meddelande(Skriv exaxt datum som du vill boka och allergi):<span class="red-letter">*</span></label>
+
+                <textarea class="form-control" id="DescriptionInput" rows="3" required></textarea>
+                
+                <div class="invalid-feedback">
+                    Skriv din meddelande
+                </div>
+            </div>
+
+
+            
+            <div class="col-12">
+                <button class="btn btn-light" type="submit"  >Skicka</button>
+            </div>
+        </form>
+    </div>
+    </div>
+
+
+    </main>
+    <footer>
+
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+     
+
+    <script src="validation.js"></script>
+    <script src="changeRadio_boka.js"></script>
+    
+  </body>
+  
+</html>
