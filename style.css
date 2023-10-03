@@ -73,7 +73,7 @@ h4 {
 .close-button {
   position: absolute;
   top: 10px;
-  right: 15%;
+  right: 3%;
   font-size: 50px;
   cursor: pointer;
   color: black;
@@ -83,53 +83,45 @@ h4 {
   font-family: "Merienda", cursive;
   font-size: 25px;
 }
-.drickmeny{
-/*max-width: 800px;*/
+.drickmeny {
+  /*max-width: 800px;*/
   margin: 0 auto;
-   padding: 20px;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-  .drickor {
-    /*background-color:*/
-    padding: 15px;
-    border-radius: 5px;
-    margin-bottom: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+.drickor {
+  /*background-color:*/
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 .drickor h2 {
-    font-size: 24px;
-    color: #333;
-    margin-bottom: 10px;
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
 }
 
 .drickor p {
-    margin: 5px 0;
-    font-size: 16px;
+  margin: 5px 0;
+  font-size: 16px;
 }
-
 
 .asiatisk-soda {
-    background-color: #ffcc00; 
-    color: #333;
-    border: 2px solid #ffcc00; 
+  background-color: #ffcc00;
+  color: #333;
+  border: 2px solid #ffcc00;
 }
-
 
 .Övriga-drickor {
-    background-color: #3399ff;
-    color: #fff; 
-    border: 2px solid #3399ff;
+  background-color: #3399ff;
+  color: #fff;
+  border: 2px solid #3399ff;
 }
 
-
-
-
-
-
-.red-letter{
-    color: red;
+.red-letter {
+  color: red;
 }
-
