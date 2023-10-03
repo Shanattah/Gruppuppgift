@@ -167,3 +167,30 @@ h4 {
         height: 550px;
     }
 }
+.recensioner {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.recension {
+    margin-bottom: 20px;
+}
+
+.recension h3 {
+    font-size: 24px;
+    color: #333;
+}
+
+.recension p {
+    font-size: 16px;
+    color: #666;
+}
+
+.recension strong {
+    color: #333;
+}
+
