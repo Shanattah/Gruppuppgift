@@ -100,22 +100,13 @@ h4 {
   background-color: rgba(0, 0, 0, 0.6);
   margin-top: 100px;
 }
-.drickmeny {
-
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #fff;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
-
 .drickor {
-
   padding: 15px;
   border-radius: 5px;
   margin-bottom: 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
 .drickor h2 {
   font-size: 24px;
   color: #333;
@@ -133,7 +124,7 @@ h4 {
   border: 2px solid #ffcc00;
 }
 
-.Övriga-drickor {
+.övriga-drickor {
   background-color: #3399ff;
   color: #fff;
   border: 2px solid #3399ff;
