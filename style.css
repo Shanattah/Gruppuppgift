@@ -99,6 +99,8 @@ h4 {
 .tema-font {
   background-color: rgba(0, 0, 0, 0.6);
   margin-top: 100px;
+  padding: 24px;
+  margin-bottom: 30px;
 }
 .drickor {
   padding: 15px;
@@ -134,60 +136,59 @@ h4 {
   color: red;
 }
 
-
-
-@media only screen and (max-width: 600px){
-    #takeout_card, #delivery_card{
-        height: 100%;
-    }
-
+@media only screen and (max-width: 600px) {
+  #takeout_card,
+  #delivery_card {
+    height: 100%;
+  }
 }
 
-@media only screen and (min-width: 601px){
+@media only screen and (min-width: 601px) {
+  #takeout_card,
+  #delivery_card {
+    height: 500px;
+  }
 
-    #takeout_card, #delivery_card{
-        height: 500px;
-    }
-
-    #takeout_photo, #delivery_photo{
-        height: 180px;
-    }
-
+  #takeout_photo,
+  #delivery_photo {
+    height: 180px;
+  }
 }
 
-@media only screen and (min-width: 1200px){
+@media only screen and (min-width: 1200px) {
+  #takeout_card,
+  #delivery_card {
+    height: 550px;
+  }
 
-    #takeout_card, #delivery_card{
-        height: 550px;
-    }
-
-    #takeout_photo, #delivery_photo{
-      height: 250px;
+  #takeout_photo,
+  #delivery_photo {
+    height: 250px;
   }
 }
 .recensioner {
-    max-width: 800px;
-    margin: 20px auto;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .recension {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .recension h3 {
-    font-size: 24px;
-    color: #333;
+  font-size: 24px;
+  color: #333;
 }
 
 .recension p {
-    font-size: 16px;
-    color: #666;
+  font-size: 16px;
+  color: #666;
 }
 
 .recension strong {
-    color: #333;
+  color: #333;
 }
