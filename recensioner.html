@@ -65,6 +65,17 @@
         </p>
         <p><strong>Betyg: 5/5</strong></p>
       </div>
+    <div class="recensions-formulär">
+        <h3>Lägg till en recension</h3>
+        <form action="#" method="post">
+          <label for="recension-titel">Titel:</label>
+          <input type="text" id="recension-titel" name="recension-titel" required />
+          <label for="recension-text">Recension:</label>
+          <textarea id="recension-text" name="recension-text" rows="4" required></textarea>
+          <label for="recension-betyg">Betyg (1-5):</label>
+          <input type="number" id="recension-betyg" name="recension-betyg" min="1" max="5" required />
+          <button type="submit">Skicka recension</button>
+        </form>    
     </section>
   </body>
 </html>
