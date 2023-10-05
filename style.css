@@ -3,11 +3,62 @@ a:hover {
   opacity: 0.8;
   border-radius: 5px;
 }
+.menu-page {
+  background-image: url(https://media.architecturaldigest.com/photos/572a34ffe50e09d42bdfb5e0/master/pass/japanese-restaurants-la-01.jpg);
+  height: 90vh;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  color: rgba(255, 255, 255, 0.9);
+}
+.tema-page {
+  background-image: url(https://shop.sugoii-japan.com/cdn/shop/products/product-image-1312080696_590x.jpg?v=1608546229);
+  height: 90vh;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  color: rgba(255, 255, 255, 0.9);
+}
+.menu-category img {
+  width: 150px;
+  height: 100px;
+}
 
+.page-intro {
+  margin-top: 100px;
+  text-align: center;
+  color: whit;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.6);
+  font-family: "Merienda", cursive;
+}
+h4 {
+  font-size: 20px;
+}
 .lunchmenu {
   margin-top: 100px;
 }
-/* Add this CSS to your existing styles or style.css file */
+.menu-category {
+  margin: 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  padding: 20px;
+  font-family: "Merienda", cursive;
+}
+.row h2 {
+  font-size: 24px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.menu-category:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
 .modal-container {
   display: none;
   position: fixed;
@@ -34,12 +85,150 @@ a:hover {
 .close-button {
   position: absolute;
   top: 10px;
-  right: 10px;
-  font-size: 24px;
+  right: 3%;
+  font-size: 50px;
   cursor: pointer;
+  color: black;
 }
 #title1,
-#title2 {
+#title2,
+.tema-font {
   font-family: "Merienda", cursive;
   font-size: 25px;
+}
+.tema-font {
+  background-color: rgba(0, 0, 0, 0.6);
+  margin-top: 100px;
+  padding: 24px;
+  margin-bottom: 30px;
+}
+.drickmeny {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background: linear-gradient(135deg, #ff6b6b, #ffd166);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  gap: 20px;
+  text-align: center;
+}
+
+
+.drickmeny h1 {
+  font-size: 36px; 
+  color: #fff;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+
+.drickor {
+  flex-basis: calc(33.33% - 20px);
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.drickor:hover {
+  transform: translateY(-5px);
+}
+
+.drickor h2 {
+  font-size: 24px;
+  color: #333;
+  margin: 10px 0;
+}
+
+.drickor p {
+  font-size: 16px;
+  color: #666;
+  margin: 10px 0;
+}
+
+.pris {
+  font-size: 18px;
+  color: #333;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+
+.övriga-drickor {
+  flex-basis: 100%;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
+}
+@media screen and (max-width: 768px) {
+  .drickor {
+    flex-basis: calc(50% - 20px);
+  }
+
+.red-letter {
+  color: red;
+}
+
+@media only screen and (max-width: 600px) {
+  #takeout_card,
+  #delivery_card {
+    height: 100%;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  #takeout_card,
+  #delivery_card {
+    height: 500px;
+  }
+
+  #takeout_photo,
+  #delivery_photo {
+    height: 180px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  #takeout_card,
+  #delivery_card {
+    height: 550px;
+  }
+
+  #takeout_photo,
+  #delivery_photo {
+    height: 250px;
+  }
+.recension {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.recension h3 {
+  font-size: 28px; 
+  color: #333;
+  margin-bottom: 10px;
+}
+
+
+.recension p {
+  font-size: 18px; 
+  color: #666;
+}
+
+
+.recension strong {
+  color: #ff6600;
+  font-weight: bold;
 }

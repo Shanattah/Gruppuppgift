@@ -1,26 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">   
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@500&display=swap" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/e115db5231.js" crossorigin="anonymous"></script>
-    <script src="script.js"></script> 
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merienda:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/e115db5231.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
-  
-  <body>
 
+  <body>
     <!-- nav start -->
-    <nav class="navbar navbar-expand-lg bg-dark fixed-top"  data-bs-theme="dark">
+    <nav class="navbar navbar-expand-lg bg-dark sticky-top" data-bs-theme="dark">
       <div class="container-fluid">
-        <a class="navbar-brand" href="index.html"><img src="images/MMHSlogo_sushi.png" alt="logo" style="width: 130px;"></a>
-        
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" style="color: white;">
-          <span><i class="fa-solid fa-bars" style="color: #ffffff;"></i></span>
+        <a class="navbar-brand" href="index.html"
+          ><img src="images/MMHSlogo_sushi.png" alt="logo" style="width: 130px"
+        /></a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          style="color: white"
+        >
+          <span><i class="fa-solid fa-bars" style="color: #ffffff"></i></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav">
@@ -28,15 +52,23 @@
               <a class="nav-link" href="boka.html">BOKA BORD</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
                 MENY
               </a>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="lunch.html">LUNCH</a></li>
                 <li><a class="dropdown-item" href="middag.html">MIDDAG</a></li>
                 <li><a class="dropdown-item" href="dryck.html">DRYCK</a></li>
+                <li><a class="dropdown-item" href="efterratt.html">EFTERRÄTT</a></li>
+                <li><a class="dropdown-item" href="sides.html">SIDORÄTTER</a></li>
               </ul>
-            </li>  
+            </li>
             <li class="nav-item">
               <a class="nav-link" href="bestalla.html">BESTÄLLA MAT</a>
             </li>
@@ -46,52 +78,106 @@
             <li class="nav-item">
               <a class="nav-link" href="kontakt.html">KONTAKT</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="recensioner.html">RECENSIONER</a>
+            </li>
           </ul>
         </div>
       </div>
     </nav>
     <!-- nav end -->
     <main>
-
-      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+      <div
+        id="carouselExampleAutoplaying"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="images/pad-thai-4705276_1280.jpg" class="d-block w-100" alt="pad thai" >
+            <img
+              src="images/pad-thai_index.jpg"
+              class="d-block w-100"
+              alt="pad thai"
+            />
           </div>
           <div class="carousel-item">
-            <img src="images/cultural-tea5121556_1280.jpg" class="d-block w-100" alt="tea" >
+            <img
+              src="images/tea_index.jpg"
+              class="d-block w-100"
+              alt="tea"
+            />
           </div>
           <div class="carousel-item">
-            <img src="images/ramen-7187812_1280.jpg" class="d-block w-100" alt="ramen" >
+            <img
+              src="images/ramen_index.jpg"
+              class="d-block w-100"
+              alt="ramen"
+            />
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="prev"
+        >
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="next"
+        >
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
       </div>
 
       <div class="containe bg-black w-100 text-bg-secondary">
-      <div class="container ">
-        <div class="row">
-          <div class="col-sm-8 text-start p-5"><p id="title1">Välcommen till MMHS!</p><p class="p-2">Vi serverar utsökta asiatiska rätter! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis dolor numquam, recusandae, at eius ducimus optio veniam neque beatae quis quibusdam cupiditate. Possimus velit totam, tempora odit animi exercitationem. Odio.</p></div>
-          <div class="col-sm-4 text-center p-5"><img style="height: 350px;" src="images/sushi-balls-5878892_1280.jpg" alt=""></div>
-        </div>
-        <div class="row">
-          <div class="col-sm-4"><img style="width:100%;" src="images/restaurang.jpg" alt=""></div>
-          <div class="col-sm-8"><p id="title2">Vår restaurang</p><p class="p-2">Vi är välkommna familjer med barnvagn!Vi är en av barnvänliga restauranger i Stockholm. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum impedit adipisci modi, aperiam odit excepturi sint animi at fugiat omnis odio doloremque assumenda minima suscipit nemo amet sunt quaerat asperiores! </p></div>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-8 text-start p-5">
+              <h2 id="title1">Välkommen till MMHS!</h2>
+              <p class="p-2">
+                Vi serverar utsökta asiatiska rätter! Vi grundade som
+                sushirestaurang i början. MMHS betyder More Mum´s Homemade Sushi
+                och restaurangen har fått sitt namn efter de fyra grundarnas
+                initialer, Magnus, Miwa, Hassvanee och Shouaayb. <br />Vi har en
+                populär lunch meny och lite lyxigare meny till middag. Titta
+                gärna på veckans tema där vi erbjudar er speciella helgkvällar
+                som fokuserar på en ovanlig matupplevelse!
+              </p>
+            </div>
+            <div class="col-sm-4 text-center p-5">
+              <img
+                class="w-100"
+                src="images/sushi-balls-5878892_1280.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4 p-5">
+              <img
+                style="width: 100%"
+                src="https://media.architecturaldigest.com/photos/572a34ffe50e09d42bdfb5e0/master/pass/japanese-restaurants-la-01.jpg"
+                alt=""
+              />
+            </div>
+            <div class="col-sm-8 p-5">
+              <h2 id="title2">Vår restaurang</h2>
+              <p class="p-2">
+                Vi välkommnar familjer med barnvagn! Vi är en av de barnvänliga
+                restaurangerna i Stockholm. Även rollstolar rör sig lätt i
+                lokalen.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
-      </div>
-
     </main>
-    <footer>
-
-    </footer>
- 
+    <footer></footer>
   </body>
 </html>

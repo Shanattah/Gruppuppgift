@@ -4,23 +4,51 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">   
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@500&display=swap" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/e115db5231.js" crossorigin="anonymous"></script>
-    <script src="script.js"></script> 
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merienda:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/e115db5231.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
   </head>
-  
-  <body>
 
+  <body>
     <!-- nav start -->
-    <nav class="navbar navbar-expand-lg bg-dark sticky-top"  data-bs-theme="dark">
+    <nav
+      class="navbar navbar-expand-lg bg-dark sticky-top"
+      data-bs-theme="dark"
+    >
       <div class="container-fluid">
-        <a class="navbar-brand" href="index.html"><img src="images/MMHSlogo_sushi.png" alt="logo" style="width: 130px;"></a>
-        
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" style="color: white;">
-          <span><i class="fa-solid fa-bars" style="color: #ffffff;"></i></span>
+        <a class="navbar-brand" href="index.html"
+          ><img src="images/MMHSlogo_sushi.png" alt="logo" style="width: 130px"
+        /></a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          style="color: white"
+        >
+          <span><i class="fa-solid fa-bars" style="color: #ffffff"></i></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav">
@@ -28,7 +56,13 @@
               <a class="nav-link" href="boka.html">BOKA BORD</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
                 MENY
               </a>
               <ul class="dropdown-menu">
@@ -36,7 +70,7 @@
                 <li><a class="dropdown-item" href="middag.html">MIDDAG</a></li>
                 <li><a class="dropdown-item" href="dryck.html">DRYCK</a></li>
               </ul>
-            </li>  
+            </li>
             <li class="nav-item">
               <a class="nav-link" href="bestalla.html">BESTÄLLA MAT</a>
             </li>
@@ -52,82 +86,85 @@
     </nav>
     <!-- nav end -->
     <main>
-        <div class="image-container"></div>
+      <div class="image-container"></div>
 
-        <style>
-            .image-container {
-                position: relative;
-                min-height: 100vh;
-                background: url('images/cooking-1835369_1280.jpg') center/cover no-repeat;
-            }
-    
-            .overlay-text {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                background-color: transparent; 
-                padding: 20px;
-                color: #fff; 
-            }
-        </style>
+      <style>
+        .image-container {
+          position: relative;
+          min-height: 100vh;
+          background: url("images/cooking-1835369_1280.jpg") center/cover
+            no-repeat;
+        }
 
-          
-<!-- En kolumn  för kontaktformuläret-->
-<div class="container">
-    <div class="row justify-content-center">
-        <h1 class="text-left">Kontakt</h1>
-        <div class="mb-3">
-            <div class="mb-3">
-            <label for="fname">Namn:</label>
-            <input
-            type="text"
-            class="form-control"
-            id="fname"
-            name="fname"
-            value=""
-            />
-      </div>
+        .overlay-text {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          background-color: transparent;
+          padding: 20px;
+          color: #fff;
+        }
+      </style>
 
-      <div class="mb-3">
-        <label for="Telefonnummer">Telefonnummer:</label>
-        <input
-          type="text"
-          class="form-control"
-          id="lname"
-          name="lname"
-          value=""
-        />
-      </div>
-    
+      <!-- En kolumn  för kontaktformuläret-->
+      <div class="container">
+        <div class="row justify-content-center">
+          <h1 class="text-left">Kontakt</h1>
           <div class="mb-3">
-            <label for="subject">E-postadress:</label>
-            <input
-              type="text"
-              class="form-control"
-              id="subject"
-              name="subject"
-              value=""
-            />
+            <form >
+              <div class="mb-3">
+                <label for="fname">Namn:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="fname"
+                  name="fname"
+                  value=""
+                />
+              </div>
+
+              <div class="mb-3">
+                <label for="telefonnummer">Telefonnummer:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="lname"
+                  name="lname"
+                  value=""
+                />
+              </div>
+
+              <div class="mb-3">
+                <label for="subject">E-postadress:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="subject"
+                  name="subject"
+                  value=""
+                />
+              </div>
+
+              <div class="mb-3">
+                <label for="message">Meddelande:</label>
+                <textarea
+                  class="form-control"
+                  id="message"
+                  name="message"
+                ></textarea>
+              </div>
+
+              <!-- En knapp för att skicka in formuläret -->
+              <div class="text-left">
+                <button type="submit" class="btn btn-outline-secondary">
+                  Skicka
+                </button>
+              </div>
+            </form>
           </div>
-    
-          <div class="mb-3">
-            <label for="message">Meddelande:</label>
-            <textarea
-              class="form-control"
-              id="message"
-              name="message"
-            ></textarea>
-          </div>
-        
-      <!-- En knapp för att skicka in formuläret -->
-      <div class="text-left">
-        <button type="submit" class="btn btn-outline-secondary">Skicka</button>
+        </div>
       </div>
-    </form>
-  </div> 
-</div>
-</div>
     </main>
 
     <footer class="bg-dark text-light">
@@ -148,74 +185,93 @@
                     164 40 Kista<br>
                   </p>
 
-                  <p>Telefon: <br>
-                  08-123 45 67</p>
+            <p>
+              Telefon: <br />
+              08-123 45 67
+            </p>
 
-                  <p>E-post:<br>
-                  info@mmhs.se</p>
+            <p>
+              E-post:<br />
+              info@mmhs.se
+            </p>
 
-                  <p>Hemsida:<br>
-                    mmhs.se</p>
-              </div>
-
-              <div class="col">
-                <div class="row align-items-start">
-                <h4>Öppettider</h4>
-
-                <style>
-                  table.tb { width: 300px;}
-                </style>
-                <table class="tb">
-                  <tr>
-                      <td class="tcell">Måndag</td>
-                      <td class="tcell">10:30 - 21:00</td>
-                    </tr>
-
-                    <tr>
-                      <td class="tcell">Tisdag</td>
-                      <td class="tcell">10:30 - 21:00</td>
-                    </tr>
-
-                    <tr>
-                      <td class="tcell">Onsdag</td>
-                      <td class="tcell">10:30 - 21:00</td>
-                    </tr>
-
-                    <tr>
-                      <td class="tcell">Torsdag</td>
-                      <td class="tcell">10:30 - 23:00</td>
-                    </tr>
-
-                    <tr>
-                      <td class="tcell">Fredag</td>
-                      <td class="tcell">10:30 - 23:00</td>
-                    </tr>
-
-                    <tr>
-                      <td class="tcell">Lördag</td>
-                      <td class="tcell">11:00 - 23:00</td>
-                    </tr>
-
-                    <tr>
-                      <td class="tcell">Söndag</td>
-                      <td class="tcell">12:00 - 21:00</td>
-                    </tr>
-                  
-                  <tr>
-                    <td colspan="2">OBS! Buffé bordet stänger 30 min innan restaurangens ordinarie stängningstider!</td>
-                  </tr>
-                </table>
-              </div>
-              </div>
-
-              <div class="col-md-6">
-                  <!-- Map container -->
-                  <div id="map" style="width: 100% height: 100%;">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2030.654043851052!2d17.946398077317664!3d59.40548420492235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f9d6db302726b%3A0xf29c835228dcf386!2sJENSEN%20yrkesh%C3%B6gskola%20Stockholm!5e0!3m2!1ssv!2sse!4v1696347357226!5m2!1ssv!2sse" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                  </div>
-              </div>
+            <p>
+              Hemsida:<br />
+              mmhs.se
+            </p>
           </div>
+
+          <div class="col">
+            <div class="row align-items-start">
+              <h4>Öppettider</h4>
+
+              <style>
+                table.tb {
+                  width: 300px;
+                }
+              </style>
+              <table class="tb">
+                <tr>
+                  <td class="tcell">Måndag</td>
+                  <td class="tcell">10:30 - 21:00</td>
+                </tr>
+
+                <tr>
+                  <td class="tcell">Tisdag</td>
+                  <td class="tcell">10:30 - 21:00</td>
+                </tr>
+
+                <tr>
+                  <td class="tcell">Onsdag</td>
+                  <td class="tcell">10:30 - 21:00</td>
+                </tr>
+
+                <tr>
+                  <td class="tcell">Torsdag</td>
+                  <td class="tcell">10:30 - 23:00</td>
+                </tr>
+
+                <tr>
+                  <td class="tcell">Fredag</td>
+                  <td class="tcell">10:30 - 23:00</td>
+                </tr>
+
+                <tr>
+                  <td class="tcell">Lördag</td>
+                  <td class="tcell">11:00 - 23:00</td>
+                </tr>
+
+                <tr>
+                  <td class="tcell">Söndag</td>
+                  <td class="tcell">12:00 - 21:00</td>
+                </tr>
+
+                <tr>
+                  <td colspan="2">
+                    OBS! Buffé bordet stänger 30 min innan restaurangens
+                    ordinarie stängningstider!
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <!-- Map container -->
+            <div id="map" style="width: 100%; height: 100%">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2030.654043851052!2d17.946398077317664!3d59.40548420492235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f9d6db302726b%3A0xf29c835228dcf386!2sJENSEN%20yrkesh%C3%B6gskola%20Stockholm!5e0!3m2!1ssv!2sse!4v1696347357226!5m2!1ssv!2sse"
+                width="100%"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
       </div>
-  </footer> 
+    </footer>
   </body>
 </html>
