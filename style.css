@@ -3,6 +3,9 @@ a:hover {
   opacity: 0.8;
   border-radius: 5px;
 }
+body:focus {
+  border: #007bff;
+}
 .menu-page {
   background-image: url(https://media.architecturaldigest.com/photos/572a34ffe50e09d42bdfb5e0/master/pass/japanese-restaurants-la-01.jpg);
   height: 90vh;
@@ -13,6 +16,7 @@ a:hover {
   background-size: cover;
   color: rgba(255, 255, 255, 0.9);
 }
+
 .tema-page {
   background-image: url(https://shop.sugoii-japan.com/cdn/shop/products/product-image-1312080696_590x.jpg?v=1608546229);
   height: 90vh;
@@ -26,12 +30,15 @@ a:hover {
 .menu-category img {
   width: 150px;
   height: 100px;
+  cursor: pointer;
 }
-
+.menu-category img:hover {
+  border: 2px solid transparent;
+  border-color: #007bff;
+}
 .page-intro {
   margin-top: 100px;
   text-align: center;
-  color: whit;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   background-color: rgba(0, 0, 0, 0.6);
   font-family: "Merienda", cursive;
