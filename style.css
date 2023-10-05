@@ -13,6 +13,7 @@ a:hover {
   background-size: cover;
   color: rgba(255, 255, 255, 0.9);
 }
+
 .tema-page {
   background-image: url(https://shop.sugoii-japan.com/cdn/shop/products/product-image-1312080696_590x.jpg?v=1608546229);
   height: 90vh;
@@ -26,12 +27,12 @@ a:hover {
 .menu-category img {
   width: 150px;
   height: 100px;
+  cursor: pointer;
 }
 
 .page-intro {
   margin-top: 100px;
   text-align: center;
-  color: whit;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   background-color: rgba(0, 0, 0, 0.6);
   font-family: "Merienda", cursive;
