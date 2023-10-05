@@ -200,7 +200,6 @@ h4 {
 
 .image-container {
   position: relative;
-
 }
 
 @media only screen and (max-width: 600px) {
@@ -212,7 +211,7 @@ h4 {
     font-size: 14px;
   }
   .description_index {
-    font-size: 8px;
+    font-size: 12px;
   }
 
   .image-container {
@@ -255,7 +254,9 @@ h4 {
   .image-container {
     min-height: 50vh;
   }
-
+  .bild-rubrik {
+    text-align: center;
+  }
   #takeout_card,
   #delivery_card {
     height: 500px;
@@ -299,6 +300,9 @@ h4 {
   }
 }
 
+.bild-rubrik {
+  font-size: 36px;
+}
 table.tb {
   width: 300px;
 }
