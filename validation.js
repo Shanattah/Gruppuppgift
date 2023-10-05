@@ -10,7 +10,8 @@ Array.prototype.slice.call( forms ).forEach( function( form ){
         form.classList.add('was-validated');
         
         if(form.checkValidity()){
-            //Form is valid, trigger the modal
+            //Bootstrap Modal does not work which we expected because of using two different bootstrap
+            //(Modal can not be closed with close button )
             //var orderModal= new bootstrap.Modal(document.getElementById('orderModal'));
             //orderModal.show();
             alert("Din meddelande är skickats!");
