@@ -40,7 +40,7 @@ body:focus {
   margin-top: 100px;
   text-align: center;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 h4 {
   font-size: 20px;
@@ -50,7 +50,7 @@ h4 {
 }
 .menu-category {
   margin: 20px;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.7);
   border-radius: 10px;
   padding: 20px;
   font-family: "Merienda", cursive;
@@ -58,7 +58,7 @@ h4 {
 .row h2 {
   font-size: 24px;
   color: white;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .menu-category:hover {
