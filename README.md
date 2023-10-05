@@ -1,5 +1,7 @@
 # Gruppuppgift
 
+I gruppen: Miwa, Magnus, Hassvanee, Shouaayb
+
 Vad för företag: Restaurang
 
 Typ av mat: Asiatisk fusion
