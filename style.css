@@ -3,6 +3,9 @@ a:hover {
   opacity: 0.8;
   border-radius: 5px;
 }
+body:focus {
+  border: #007bff;
+}
 .menu-page {
   background-image: url(https://media.architecturaldigest.com/photos/572a34ffe50e09d42bdfb5e0/master/pass/japanese-restaurants-la-01.jpg);
   height: 90vh;
