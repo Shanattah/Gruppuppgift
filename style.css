@@ -172,42 +172,143 @@ h4 {
   .drickor {
     flex-basis: calc(50% - 20px);
   }
+}
 
 .red-letter {
   color: red;
 }
+
+
+.carousel-caption-custom {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5); 
+  padding: 15px; 
+  color: white;
 }
 
-@media only screen and (max-width: 600px) {
-  #takeout_card,
-  #delivery_card {
-    height: 100%;
-  }
+.image-container {
+  position: relative;
+  background: url("images/bokabord.jpg") center/cover
+    no-repeat;
 }
 
-@media only screen and (min-width: 601px) {
-  #takeout_card,
-  #delivery_card {
-    height: 500px;
+@media only screen and (max-width: 600px){
+
+  .carousel-caption-custom {
+    padding: 0px; 
   }
 
-  #takeout_photo,
-  #delivery_photo {
+  .rubrik_index{
+    font-size:14px;
+  }
+  .description_index{
+    font-size: 8px;
+  }
+
+  .image-container {
+    height: 30vh;
+  }
+
+  #takeout_card, 
+  #delivery_card{
+      height: 100%;
+  }
+
+    #footer_container {
+      text-align: center;
+    }
+
+    table.tb {
+      width:100%;
+    }
+
+  #adress_container,
+  #opentime_container,
+  #map_container {
+    padding-top: 30px;
+  }
+
+    iframe{
+      width: 100%;
+      height: 280px;
+  
+    }
+}
+
+@media only screen and (min-width: 601px){
+
+  .rubrik_index{
+    font-size:25px;
+  }
+  .description_index{
+    font-size: 20px;
+  }
+
+  .image-container {
+    min-height: 50vh;
+  }
+
+  #takeout_card, 
+  #delivery_card{
+      height: 500px;
+  }
+
+  #takeout_photo, 
+  #delivery_photo{
     height: 180px;
   }
+
+    table.tb {
+      width: 280px;
+    }
+
+    iframe{
+      width: 100%;
+      height:450px;
+  
+    }
+
 }
 
-@media only screen and (min-width: 1200px) {
-  #takeout_card,
-  #delivery_card {
-    height: 550px;
+
+@media only screen and (min-width: 1200px){
+
+  .rubrik_index{
+    font-size:35px;
   }
+  .description_index{
+    font-size: 20px;
+  }
+
+  .image-container {
+    min-height: 90vh;
+  }
+
+  #takeout_card,
+  #delivery_card{
+        height: 550px;
+    }
 
   #takeout_photo,
   #delivery_photo {
     height: 250px;
   }
+
+  table.tb {
+    width: 300px;
+  }
+
+  iframe{
+    width:100%;
+    height:450px;
+
+  }
 }
+
 
 .recension {
   margin-bottom: 20px;
