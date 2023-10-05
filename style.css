@@ -198,10 +198,11 @@ h4 {
   #delivery_card {
     height: 550px;
   }
-}
-#takeout_photo,
-#delivery_photo {
-  height: 250px;
+
+  #takeout_photo,
+  #delivery_photo {
+    height: 250px;
+  }
 }
 .recension {
   margin-bottom: 20px;
