@@ -178,9 +178,9 @@
       </div>
     </main>
     <footer class="bg-dark text-light">
-      <div class="container">
-        <div class="row align-items-start">
-          <div class="col">
+      <div class="container p-1" id="footer_container">
+        <div class="row align-items-start p-3">
+          <div class="col-sm-12 col-md-6 col-lg-3 pl-md-5" id="adress_container">
             <h4>MMHS</h4>
             <p>
               Adress:<br />
@@ -191,12 +191,12 @@
 
             <p>
               Telefon: <br />
-              08-123 45 67
+              080-123 45 67
             </p>
 
             <p>
               E-post:<br />
-              info@mmhs.se
+              <a href="mailto:info@mmhs.se"> info@mmhs.se</a>
             </p>
 
             <p>
@@ -205,15 +205,15 @@
             </p>
           </div>
 
-          <div class="col">
-            <div class="row align-items-start">
+          <div class="col-sm-12 col-md-6 col-lg-3 pl-md-5" id="opentime_container">
+            
               <h4>Öppettider</h4>
 
-              <style>
+              <!-- <style>
                 table.tb {
                   width: 300px;
                 }
-              </style>
+              </style>  -->
               <table class="tb">
                 <tr>
                   <td class="tcell">Måndag</td>
@@ -251,22 +251,21 @@
                 </tr>
 
                 <tr>
-                  <td colspan="2">
+                  <!-- <td colspan="2">
                     OBS! Buffé bordet stänger 30 min innan restaurangens
                     ordinarie stängningstider!
-                  </td>
+                  </td> -->
                 </tr>
               </table>
-            </div>
+            
           </div>
 
-          <div class="col-md-6">
+          <div class="col-sm-12 col-lg-5 mr-1 mt-1 mb-1 pl-lg-5" id="map_container" >
             <!-- Map container -->
-            <div id="map" style="width: 100%; height: 100%">
+            <div id="map" >
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2030.654043851052!2d17.946398077317664!3d59.40548420492235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f9d6db302726b%3A0xf29c835228dcf386!2sJENSEN%20yrkesh%C3%B6gskola%20Stockholm!5e0!3m2!1ssv!2sse!4v1696347357226!5m2!1ssv!2sse"
-                width="100%"
-                height="450px"
+                
                 style="border: 0"
                 allowfullscreen=""
                 loading="lazy"
