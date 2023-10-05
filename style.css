@@ -3,6 +3,9 @@ a:hover {
   opacity: 0.8;
   border-radius: 5px;
 }
+body:focus {
+  border: #007bff;
+}
 .menu-page {
   background-image: url(https://media.architecturaldigest.com/photos/572a34ffe50e09d42bdfb5e0/master/pass/japanese-restaurants-la-01.jpg);
   height: 90vh;
@@ -13,6 +16,7 @@ a:hover {
   background-size: cover;
   color: rgba(255, 255, 255, 0.9);
 }
+
 .tema-page {
   background-image: url(https://shop.sugoii-japan.com/cdn/shop/products/product-image-1312080696_590x.jpg?v=1608546229);
   height: 90vh;
@@ -26,12 +30,15 @@ a:hover {
 .menu-category img {
   width: 150px;
   height: 100px;
+  cursor: pointer;
 }
-
+.menu-category img:hover {
+  border: 2px solid transparent;
+  border-color: #007bff;
+}
 .page-intro {
   margin-top: 100px;
   text-align: center;
-  color: whit;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   background-color: rgba(0, 0, 0, 0.6);
   font-family: "Merienda", cursive;
@@ -116,16 +123,14 @@ h4 {
   text-align: center;
 }
 
-
 .drickmeny h1 {
-  font-size: 36px; 
+  font-size: 36px;
   color: #fff;
   margin-bottom: 20px;
   text-transform: uppercase;
   letter-spacing: 2px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
-
 
 .drickor {
   flex-basis: calc(33.33% - 20px);
@@ -159,7 +164,6 @@ h4 {
   margin-top: 10px;
 }
 
-
 .övriga-drickor {
   flex-basis: 100%;
   padding: 15px;
@@ -172,12 +176,16 @@ h4 {
   .drickor {
     flex-basis: calc(50% - 20px);
   }
+
+  .red-letter {
+    color: red;
+  }
 }
 
-.red-letter {
-  color: red;
+#takeout_card,
+#delivery_card {
+  height: 100%;
 }
-
 
 .carousel-caption-custom {
   position: absolute;
@@ -185,8 +193,8 @@ h4 {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.5); 
-  padding: 15px; 
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 15px;
   color: white;
 }
 
@@ -195,18 +203,15 @@ h4 {
 
 }
 
-
-
-@media only screen and (max-width: 600px){
-
+@media only screen and (max-width: 600px) {
   .carousel-caption-custom {
-    padding: 0px; 
+    padding: 0px;
   }
 
-  .rubrik_index{
-    font-size:14px;
+  .rubrik_index {
+    font-size: 14px;
   }
-  .description_index{
+  .description_index {
     font-size: 8px;
   }
 
@@ -214,18 +219,18 @@ h4 {
     height: 30vh;
   }
 
-  #takeout_card, 
-  #delivery_card{
-      height: 100%;
+  #takeout_card,
+  #delivery_card {
+    height: 100%;
   }
 
-    #footer_container {
-      text-align: center;
-    }
+  #footer_container {
+    text-align: center;
+  }
 
-    table.tb {
-      width:100%;
-    }
+  table.tb {
+    width: 100%;
+  }
 
   #adress_container,
   #opentime_container,
@@ -233,19 +238,17 @@ h4 {
     padding-top: 30px;
   }
 
-    iframe{
-      width: 100%;
-      height: 280px;
-  
-    }
+  iframe {
+    width: 100%;
+    height: 280px;
+  }
 }
 
-@media only screen and (min-width: 601px){
-
-  .rubrik_index{
-    font-size:25px;
+@media only screen and (min-width: 601px) {
+  .rubrik_index {
+    font-size: 25px;
   }
-  .description_index{
+  .description_index {
     font-size: 20px;
   }
 
@@ -253,35 +256,31 @@ h4 {
     min-height: 50vh;
   }
 
-  #takeout_card, 
-  #delivery_card{
-      height: 500px;
+  #takeout_card,
+  #delivery_card {
+    height: 500px;
   }
 
-  #takeout_photo, 
-  #delivery_photo{
+  #takeout_photo,
+  #delivery_photo {
     height: 180px;
   }
 
-    table.tb {
-      width: 280px;
-    }
+  table.tb {
+    width: 280px;
+  }
 
-    iframe{
-      width: 100%;
-      height:450px;
-  
-    }
-
+  iframe {
+    width: 100%;
+    height: 450px;
+  }
 }
 
-
-@media only screen and (min-width: 1200px){
-
-  .rubrik_index{
-    font-size:35px;
+@media only screen and (min-width: 1200px) {
+  .rubrik_index {
+    font-size: 35px;
   }
-  .description_index{
+  .description_index {
     font-size: 20px;
   }
 
@@ -290,26 +289,24 @@ h4 {
   }
 
   #takeout_card,
-  #delivery_card{
-        height: 550px;
-    }
+  #delivery_card {
+    height: 550px;
+  }
 
   #takeout_photo,
   #delivery_photo {
     height: 250px;
   }
-
-  table.tb {
-    width: 300px;
-  }
-
-  iframe{
-    width:100%;
-    height:450px;
-
-  }
 }
 
+table.tb {
+  width: 300px;
+}
+
+iframe {
+  width: 100%;
+  height: 450px;
+}
 
 .recension {
   margin-bottom: 20px;
@@ -319,19 +316,16 @@ h4 {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-
 .recension h3 {
-  font-size: 28px; 
+  font-size: 28px;
   color: #333;
   margin-bottom: 10px;
 }
 
-
 .recension p {
-  font-size: 18px; 
+  font-size: 18px;
   color: #666;
 }
-
 
 .recension strong {
   color: #ff6600;
