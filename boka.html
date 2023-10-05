@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+       
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e115db5231.js" crossorigin="anonymous"></script>
+
+  </head>
+  
+  <body class="bg-black">
+
+    <!-- nav start -->
+    <nav class="navbar navbar-expand-lg bg-dark sticky-top"  data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img src="images/MMHSlogo_sushi.png" alt="logo" style="width: 130px;"></a>
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" style="color: white;">
+          <span><i class="fa-solid fa-bars" style="color: #ffffff;"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="boka.html">BOKA BORD</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                MENY
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="lunch.html">LUNCH</a></li>
+                <li><a class="dropdown-item" href="middag.html">MIDDAG</a></li>
+                <li><a class="dropdown-item" href="dryck.html">DRYCK</a></li>
+                <li><a class="dropdown-item" href="efterratt.html">EFTERRÄTT</a></li>
+                <li><a class="dropdown-item" href="sides.html">SIDORÄTTER</a></li>
+              </ul>
+            </li>  
+            <li class="nav-item">
+              <a class="nav-link" href="bestalla.html">BESTÄLLA MAT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="tema.html">VECKANS TEMA</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="kontakt.html">KONTAKT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="recensioner.html">RECENSIONER</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- nav end -->
+    <main>
+      <div class="image-container"></div>
+
+      <!-- <style>
+        .image-container {
+          position: relative;
+          min-height: 100vh;
+          background: url("images/bokabord.jpg") center/cover
+            no-repeat;
+        }
+
+        .overlay-text {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          background-color: transparent;
+          padding: 20px;
+          color: #fff;
+        }
+        
+      </style> -->
+
+        <div class="container-fluid p-sm-5 bg-black text-bg-secondary">
+        <div class="text-center m-3"><h3>Boka bord</h3></div>
+
+      <div class="container ">
+        <form class="row needs-validation m-2" novalidate>
+
+
+            <div class="mb-3 col-12">
+
+                <label for="customerNameInput" class="form-label">Namn:<span class="red-letter">*</span></label>
+           
+                <input type="text" class="form-control" id="customerNameInput" placeholder="Ditt förstanamn Ditt efternamn" aria-label="customer name" required />
+                
+                <div class="invalid-feedback">
+                    Ogiltigt namn
+                </div>
+            </div>
+
+            <div class="mb-3 col-12">
+                <label for="telefonnummerInput" class="form-label">Telefonnummer:<span class="red-letter">*</span></label>
+
+                <input type="tel" class="form-control" id="telefonnummerInput" minlength="10" placeholder="0102345555" pattern="[0-9]{1,10}"
+                required />
+                
+                <div class="invalid-feedback">
+                    Ogiltigt telefonnummer
+                </div>
+            </div>
+
+            <div class="mb-3 col-12">
+                <label for="emailInput" class="form-label">E-postadress:<span class="red-letter">*</span></label>
+
+                <input type="email" class="form-control" id="emailInput" placeholder="namn@example.com" required />
+                
+                <div class="invalid-feedback">
+                    Ogiltigt E-postadress
+                </div>
+            </div>
+
+            <div class="mb-3 col-12" id="pickupTimeContainer" >
+                <label for="pickupTime" class="form-label">Bokning dag(Ni får boka en dag från den här veckans eller nästa veckans dagar):<span class="red-letter">*</span></label>
+                <select class="form-select" id="pickupTime" aria-label="dag select" required>
+                    <option value="" selected disabled hidden>Välj dag</option>
+                    <option value="1">Denna vecka Måndag</option>
+                    <option value="2">Denna vecka Tisdag</option>
+                    <option value="3">Denna vecka Onsdag</option>
+                    <option value="4">Denna vecka Torsdag</option>
+                    <option value="5">Denna vecka Fredag</option>
+                    <option value="6">Denna vecka Lördag</option>
+                    <option value="7">Denna vecka Söndag</option>
+                    <option value="8">Nästa vecka Måndag</option>
+                    <option value="9">Nästa vecka Tisdag</option>
+                    <option value="10">Nästa vecka Onsdag</option>
+                    <option value="11">Nästa vecka Torsdag</option>
+                    <option value="12">Nästa vecka Fredag</option>
+                    <option value="13">Nästa vecka Lördag</option>
+                    <option value="14">Nästa vecka Söndag</option>
+                </select>
+                <div class="invalid-feedback">
+                  Välj ett alternativ
+                </div>
+            </div>
+
+            <div class="mb-3 col-12">
+                <div class="form-label">Välj tid:<span class="red-letter">*</span></div>
+                  <div class="form-check-inline">
+                      <input class="form-check-input" type="radio" name="radioB" id="radio1" value="lunch" required/>
+  
+                      <label class="form-check-label" for="radio1">
+                          Lunch
+                      </label>
+                  </div>
+  
+                  <div class="form-check-inline">
+                      <input class="form-check-input" type="radio" name="radioB" id="radio2" value="dinner" />
+  
+                      <label class="form-check-label" for="radio2">
+                          Middag
+                      </label>
+                  </div>
+                  <div class="invalid-feedback">
+                    Välj en upphämtningstid
+                </div>
+              </div>
+
+            <div class="mb-3 col-12" id="pickupTimeContainerLunch" style="display: none;" >
+                <label for="pickupLunchTime" class="form-label">Lunch bokning (Vadagar 10:30-14:00):<span class="red-letter">*</span></label>
+                <select class="form-select" id="pickupLunchTime" aria-label="time select" >
+                    <option value="" selected disabled hidden>Välj tid</option>
+                    <option value="1">10:30</option>
+                    <option value="2">11:00</option>
+                    <option value="3">11:30</option>
+                    <option value="4">13:30</option>
+                    <option value="5">14:00</option>
+                </select>
+                <div class="invalid-feedback">
+                  Välj ett alternativ
+                </div>
+            </div>
+
+            <div class="mb-3 col-12" id="pickupTimeContainerDinner" style="display: none;">
+                <label for="pickupDinnerTime" class="form-label">Middag bokning:<span class="red-letter">*</span></label>
+                <select class="form-select" id="pickupDinnerTime" aria-label="time select" >
+                    <option value="" selected disabled hidden>Välj tid</option>
+                    <option value="1">15:00</option>
+                    <option value="2">15:30</option>
+                    <option value="3">16:00</option>
+                    <option value="4">16:30</option>
+                    <option value="5">17:00</option>
+                    <option value="6">17:30</option>
+                    <option value="7">18:00</option>
+                    <option value="8">18:30</option>
+                    <option value="9">19:00</option>
+                    <option value="10">19:30</option>
+                    <option value="11">20:00</option>
+                    <option value="12">20:30</option>
+                    <option value="13">21:00</option>
+                    <option value="14">21:30</option>
+                </select>
+                <div class="invalid-feedback">
+                  Välj ett alternativ
+                </div>
+            </div>
+
+            <div class="mb-3 col-12" >
+                <label for="pickupNumberOfGuests" class="form-label">Antal personer(Om du vill boka mer än 9 personer skriv meddelande):<span class="red-letter">*</span></label>
+                <select class="form-select" id="pickupNumberOfGuests" aria-label="guests select" required>
+                    <option value="" selected disabled hidden>Välj antal personer</option>
+                    <option value="1">2</option>
+                    <option value="2">3</option>
+                    <option value="3">4</option>
+                    <option value="4">5</option>
+                    <option value="5">6</option>
+                    <option value="6">7</option>
+                    <option value="7">8</option>
+                    <option value="8">Mer än 9</option>
+
+                </select>
+                <div class="invalid-feedback">
+                  Välj ett alternativ
+                </div>
+            </div>
+
+            <div class="mb-3 col-12">
+                <label for="DescriptionInput" class="form-label">Meddelande(Skriv exaxt datum som du vill boka och allergi):<span class="red-letter">*</span></label>
+
+                <textarea class="form-control" id="DescriptionInput" rows="3" required></textarea>
+                
+                <div class="invalid-feedback">
+                    Skriv din meddelande
+                </div>
+            </div>
+
+
+            
+            <div class="col-12">
+                <button class="btn btn-light" type="submit"  >Skicka</button>
+            </div>
+        </form>
+    </div>
+    </div>
+
+
+    </main>
+    <footer class="bg-dark text-light">
+      <div class="container p-1" id="footer_container">
+        <div class="row align-items-start p-3">
+          <div class="col-sm-12 col-md-6 col-lg-3 pl-md-5" id="adress_container">
+            <h4>MMHS</h4>
+            <p>
+              Adress:<br />
+              Jensens Yrkeshögskola<br />
+              Isafjordsgatan 30A<br />
+              164 40 Kista<br />
+            </p>
+
+            <p>
+              Telefon: <br />
+              080-123 45 67
+            </p>
+
+            <p>
+              E-post:<br />
+              <a href="mailto:info@mmhs.se"> info@mmhs.se</a>
+            </p>
+
+            <p>
+              Hemsida:<br />
+              mmhs.se
+            </p>
+          </div>
+
+          <div class="col-sm-12 col-md-6 col-lg-3 pl-md-5" id="opentime_container">
+            
+              <h4>Öppettider</h4>
+
+              <!-- <style>
+                table.tb {
+                  width: 300px;
+                }
+              </style>  -->
+              <table class="tb">
+                <tr>
+                  <td class="tcell">Måndag</td>
+                  <td class="tcell">10:30 - 21:00</td>
+                </tr>
+
+                <tr>
+                  <td class="tcell">Tisdag</td>
+                  <td class="tcell">10:30 - 21:00</td>
+                </tr>
+
+                <tr>
+                  <td class="tcell">Onsdag</td>
+                  <td class="tcell">10:30 - 21:00</td>
+                </tr>
+
+                <tr>
+                  <td class="tcell">Torsdag</td>
+                  <td class="tcell">10:30 - 23:00</td>
+                </tr>
+
+                <tr>
+                  <td class="tcell">Fredag</td>
+                  <td class="tcell">10:30 - 23:00</td>
+                </tr>
+
+                <tr>
+                  <td class="tcell">Lördag</td>
+                  <td class="tcell">11:00 - 23:00</td>
+                </tr>
+
+                <tr>
+                  <td class="tcell">Söndag</td>
+                  <td class="tcell">12:00 - 21:00</td>
+                </tr>
+
+                <tr>
+                  <!-- <td colspan="2">
+                    OBS! Buffé bordet stänger 30 min innan restaurangens
+                    ordinarie stängningstider!
+                  </td> -->
+                </tr>
+              </table>
+            
+          </div>
+
+          <div class="col-sm-12 col-lg-5 mr-1 mt-1 mb-1 pl-lg-5" id="map_container" >
+            <!-- Map container -->
+            <div id="map" >
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2030.654043851052!2d17.946398077317664!3d59.40548420492235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f9d6db302726b%3A0xf29c835228dcf386!2sJENSEN%20yrkesh%C3%B6gskola%20Stockholm!5e0!3m2!1ssv!2sse!4v1696347357226!5m2!1ssv!2sse"
+                
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+     
+
+    <script src="validation.js"></script>
+    <script src="changeRadio_boka.js"></script>
+    
+  </body>
+  
+</html>

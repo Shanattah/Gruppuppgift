@@ -35,6 +35,8 @@
                 <li><a class="dropdown-item" href="lunch.html">LUNCH</a></li>
                 <li><a class="dropdown-item" href="middag.html">MIDDAG</a></li>
                 <li><a class="dropdown-item" href="dryck.html">DRYCK</a></li>
+                <li><a class="dropdown-item" href="efterratt.html">EFTERRÄTT</a></li>
+                <li><a class="dropdown-item" href="sides.html">SIDORÄTTER</a></li>
               </ul>
             </li>  
             <li class="nav-item">
@@ -46,6 +48,9 @@
             <li class="nav-item">
               <a class="nav-link" href="kontakt.html">KONTAKT</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="recensioner.html">RECENSIONER</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -53,16 +58,16 @@
     <!-- nav end -->
     <main>
         <div class="container-fluid p-sm-5 bg-black text-bg-secondary">
-        <div class="text-center m-3"><h4>Take out / Hemleverans</h4></div>
+        <div class="text-center m-3"><h3>Take out / Hemleverans</h3></div>
 
       <div class="container ">
       <div class="row p-2">
         <div class="col-sm-6 m-auto"  >
         <div class="card m-1" id="takeout_card" >
-          <img src="images/takeout.jpg" class="card-img-top" alt="tske out sushi">
+          <img src="images/takeout.jpg" class="card-img-top" id="takeout_photo" alt="tske out sushi">
           <div class="card-body">
             <h5 class="card-title text-center">Take out</h5>
-            <p class="card-text p-2"><i class="fa-regular fa-clock" style="color: #f4925d;"></i>Hämtningstid:  <br>Mån-Fre, Lunch, 11.00-12.00 <br>Mån-Fre, Middag, 17.00-18.00</p>
+            <p class="card-text p-2"><i class="fa-regular fa-clock" style="color: #f4925d;"></i>Hämtningstid:  <br>Mån-Fre, Lunch, 11.00-14.00 <br>Mån-Tors, Middag, 17.00-21.00</p>
           </div>
           <div class="card-body ">
             <p class="p-2"><i class="fa-solid fa-file-pen" style="color: #f4925d;"></i> Beställningsvillkor:  <br> 
@@ -75,7 +80,7 @@
 
         <div class="col-sm-6 m-auto"  >
         <div class="card m-1" id="delivery_card">
-          <img src="images/home_delivery.jpg" class="card-img-top" alt="tske out sushi">
+          <img src="images/home_delivery.jpg" class="card-img-top" id="delivery_photo" alt="take out sushi">
           <div class="card-body">
             <h5 class="card-title text-center">Hemleverans</h5>
             <p class="card-text p-2"><i class="fa-regular fa-clock" style="color: #f4925d;"></i>Leveranstid: <br>Mån-Fre, Lunch, 11.00-12.00 <br></p>
@@ -122,7 +127,7 @@
           <!-- Show when user choose Take out dropdown -->
             <div class="mb-3 col-12" id="pickupTimeContainer" style="display: none;">
                 <label for="pickupTime" class="form-label">Upphämtningstid:<span class="red-letter">*</span></label>
-                <select class="form-select" id="pickupTime" aria-label="Superhero select" >
+                <select class="form-select" id="pickupTime" aria-label="time select" >
                     <option value="" selected disabled hidden>Välj upphämtningstid</option>
                     <option value="1">kl.11:00-11:15</option>
                     <option value="2">kl.11:15-11:30</option>
@@ -142,7 +147,7 @@
 
                 <label for="customerNameInput" class="form-label">Namn:<span class="red-letter">*</span></label>
            
-                <input type="text" class="form-control" id="customerNameInput" placeholder="Ditt förstanamn Ditt efternamn" aria-label="customer name" aria-describedby="InputGroup1" required />
+                <input type="text" class="form-control" id="customerNameInput" placeholder="Ditt förstanamn Ditt efternamn" aria-label="customer name"  required />
                 
                 <div class="invalid-feedback">
                     Ogiltigt namn
@@ -172,7 +177,7 @@
 
             <!--Show when user choose Hemleverans -->
             <div class="mb-3 col-12" id="adressInputContainer" style="display: none;">
-              <label for="addressInput" class="form-label">Leveransadress:<span class="red-letter">*</span></label>
+              <label for="adressInput" class="form-label">Leveransadress:<span class="red-letter">*</span></label>
 
               <input type="text" class="form-control" id="adressInput" minlength="10" placeholder="abcvägen 1  11160 Strockholm"  />
               
@@ -195,7 +200,7 @@
 
             
             <div class="col-12">
-                <button class="btn btn-outline-secondary" type="submit"  >Skicka</button>
+                <button class="btn btn-light" type="submit"  >Skicka</button>
             </div>
         </form>
     </div>

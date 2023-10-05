@@ -3,6 +3,9 @@ a:hover {
   opacity: 0.8;
   border-radius: 5px;
 }
+body:focus {
+  border: #007bff;
+}
 .menu-page {
   background-image: url(https://media.architecturaldigest.com/photos/572a34ffe50e09d42bdfb5e0/master/pass/japanese-restaurants-la-01.jpg);
   height: 90vh;
@@ -13,6 +16,7 @@ a:hover {
   background-size: cover;
   color: rgba(255, 255, 255, 0.9);
 }
+
 .tema-page {
   background-image: url(https://shop.sugoii-japan.com/cdn/shop/products/product-image-1312080696_590x.jpg?v=1608546229);
   height: 90vh;
@@ -26,12 +30,15 @@ a:hover {
 .menu-category img {
   width: 150px;
   height: 100px;
+  cursor: pointer;
 }
-
+.menu-category img:hover {
+  border: 2px solid transparent;
+  border-color: #007bff;
+}
 .page-intro {
   margin-top: 100px;
   text-align: center;
-  color: whit;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   background-color: rgba(0, 0, 0, 0.6);
   font-family: "Merienda", cursive;
@@ -99,89 +106,229 @@ h4 {
 .tema-font {
   background-color: rgba(0, 0, 0, 0.6);
   margin-top: 100px;
+  padding: 24px;
+  margin-bottom: 30px;
 }
-.drickor {
-  padding: 15px;
-  border-radius: 5px;
+.drickmeny {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background: linear-gradient(135deg, #ff6b6b, #ffd166);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  gap: 20px;
+  text-align: center;
+}
+
+.drickmeny h1 {
+  font-size: 36px;
+  color: #fff;
   margin-bottom: 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.drickor {
+  flex-basis: calc(33.33% - 20px);
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.drickor:hover {
+  transform: translateY(-5px);
 }
 
 .drickor h2 {
   font-size: 24px;
   color: #333;
-  margin-bottom: 10px;
+  margin: 10px 0;
 }
 
 .drickor p {
-  margin: 5px 0;
   font-size: 16px;
+  color: #666;
+  margin: 10px 0;
 }
 
-.asiatisk-soda {
-  background-color: #ffcc00;
+.pris {
+  font-size: 18px;
   color: #333;
-  border: 2px solid #ffcc00;
+  font-weight: bold;
+  margin-top: 10px;
 }
 
 .övriga-drickor {
-  background-color: #3399ff;
-  color: #fff;
-  border: 2px solid #3399ff;
+  flex-basis: 100%;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
+}
+@media screen and (max-width: 768px) {
+  .drickor {
+    flex-basis: calc(50% - 20px);
+  }
+
+  .red-letter {
+    color: red;
+  }
 }
 
-.red-letter {
-  color: red;
-}
+@media only screen and (max-width: 600px) {
+  #takeout_card,
+  #delivery_card {
+    height: 100%;
+  }
 
+  .carousel-caption-custom {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    color: white;
+  }
 
+  .image-container {
+    position: relative;
+    background: url("images/bokabord.jpg") center/cover no-repeat;
+  }
 
-@media only screen and (max-width: 600px){
-    #takeout_card, #delivery_card{
-        height: 100%;
+  @media only screen and (max-width: 600px) {
+    .carousel-caption-custom {
+      padding: 0px;
     }
 
-
-}
-
-@media only screen and (min-width: 601px){
-
-    #takeout_card, #delivery_card{
-        height: 500px;
+    .rubrik_index {
+      font-size: 14px;
+    }
+    .description_index {
+      font-size: 8px;
     }
 
-}
-
-@media only screen and (min-width: 1200px){
-
-    #takeout_card, #delivery_card{
-        height: 550px;
+    .image-container {
+      height: 30vh;
     }
+
+    #takeout_card,
+    #delivery_card {
+      height: 100%;
+    }
+  }
+  #footer_container {
+    text-align: center;
+  }
+
+  table.tb {
+    width: 100%;
+  }
+
+  #adress_container,
+  #opentime_container,
+  #map_container {
+    padding-top: 30px;
+  }
+
+  iframe {
+    width: 100%;
+    height: 280px;
+  }
 }
-.recensioner {
-    max-width: 800px;
-    margin: 20px auto;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+@media only screen and (min-width: 601px) {
+  .rubrik_index {
+    font-size: 25px;
+  }
+  .description_index {
+    font-size: 20px;
+  }
+
+  .image-container {
+    min-height: 50vh;
+  }
+
+  #takeout_card,
+  #delivery_card {
+    height: 500px;
+  }
+
+  #takeout_photo,
+  #delivery_photo {
+    height: 180px;
+  }
+
+  table.tb {
+    width: 280px;
+  }
+
+  iframe {
+    width: 100%;
+    height: 450px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .rubrik_index {
+    font-size: 35px;
+  }
+  .description_index {
+    font-size: 20px;
+  }
+
+  .image-container {
+    min-height: 90vh;
+  }
+
+  #takeout_card,
+  #delivery_card {
+    height: 550px;
+  }
+
+  #takeout_photo,
+  #delivery_photo {
+    height: 250px;
+  }
+}
+
+table.tb {
+  width: 300px;
+}
+
+iframe {
+  width: 100%;
+  height: 450px;
 }
 
 .recension {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .recension h3 {
-    font-size: 24px;
-    color: #333;
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 10px;
 }
 
 .recension p {
-    font-size: 16px;
-    color: #666;
+  font-size: 18px;
+  color: #666;
 }
 
 .recension strong {
-    color: #333;
+  color: #ff6600;
+  font-weight: bold;
 }
-
