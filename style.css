@@ -176,6 +176,7 @@ h4 {
 .red-letter {
   color: red;
 }
+}
 
 @media only screen and (max-width: 600px) {
   #takeout_card,
@@ -206,6 +207,8 @@ h4 {
   #delivery_photo {
     height: 250px;
   }
+}
+
 .recension {
   margin-bottom: 20px;
   padding: 20px;
