@@ -182,10 +182,6 @@ h4 {
   color: red;
 }
 
-#takeout_card,
-#delivery_card {
-  height: 100%;
-}
 
 .carousel-caption-custom {
   position: absolute;
@@ -298,18 +294,18 @@ h4 {
   #delivery_photo {
     height: 250px;
   }
-}
 
-.bild-rubrik {
-  font-size: 36px;
-}
-table.tb {
-  width: 300px;
-}
+  .bild-rubrik {
+    font-size: 36px;
+  }
+  table.tb {
+    width: 300px;
+  }
 
-iframe {
-  width: 100%;
-  height: 450px;
+  iframe {
+    width: 100%;
+    height: 450px;
+  }
 }
 
 .recension {
